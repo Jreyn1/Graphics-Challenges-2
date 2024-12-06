@@ -14,7 +14,7 @@ public class MyCanvas extends Canvas
 		public static void main(String[] args)
 			{
 				System.out.println("Test 3");
-				challengeOneSysos();
+		//		challengeOneSysos();
 				
 				MyCanvas canvas = new MyCanvas();
 				JFrame frame = new JFrame();
@@ -30,18 +30,36 @@ public class MyCanvas extends Canvas
 		public void paint(Graphics graphics)
 			{
 
+			//Challenge 1 (Completed)	
+				
 				//Set Blue Color
-				if (color == 1)
-					{
-						graphics.setColor(Color.blue);
-						graphics.fillRect(110, 100, size, size);
-					}
+		//		if (color == 1)
+		//			{
+		//				graphics.setColor(Color.blue);
+		//				graphics.drawRect(110, 100, size, size);
+		//			}
 				//Set Red Color
-				else if (color == 2)
+		//		else if (color == 2)
+		//			{
+		//				graphics.setColor(Color.red);
+		//				graphics.drawRect(110, 100, size, size);
+		//			}
+				
+			//Challenge 2 (Completed)
+				
+				for (int r = 0; r <= 255; r++)
 					{
-						graphics.setColor(Color.red);
-						graphics.fillRect(110, 100, size, size);
+						for (int g = 0; g <= 255; g++)
+							{
+								for (int b = 0; b <= 255; b++)
+									{
+										graphics.setColor(new Color(r, g, b));
+										graphics.fillRect(100, 100, 200, 200);
+									}
+							}
 					}
+				
+			//Challenge 2
 
 			}
 
